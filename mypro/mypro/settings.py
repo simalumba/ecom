@@ -88,7 +88,7 @@ DATABASES = {
         'ENGINE': 'django.db.backends.postgresql',
         'NAME': 'railway',  # from Railway dashboard
         'USER': 'postgres',  # check Railway dashboard for exact username
-        'PASSWORD': os.environ.get('DB_PASSWORD_YO'), # make sure this env var is set
+        'PASSWORD': os.environ['DB_PASSWORD_YO'], # make sure this env var is set
         'HOST': 'altaria.proxy.rlwy.net',  # Railway public host
         'PORT': '56594',
     }
